@@ -1,0 +1,239 @@
+LÂMPADA 2.0: Pacote de Recursos do Segundo HAREM
+--------------------------------------------
+
+1. Introdução
+2. Estrutura do pacote
+3. Organização do Segundo HAREM
+4. Colecções
+5. Programas de avaliação
+6. Corridas dos sistemas
+7. Diferenças em relação à versão 1.0
+8. Agradecimentos
+
+
+1. Introdução
+-------------------------------
+
+Este pacote está acessível a partir de http://www.linguateca.pt/HAREM/PacoteRecursosSegundoHAREM.zip, e inclui os principais recursos criados no âmbito do Segundo HAREM, uma avaliação conjunta em reconhecimento de entidades mencionadas organizada pela Linguateca e documentada em Mota & Santos (2008).
+
+Este recurso é distribuído através da licença "Creative Commons 3.0", disponível em https://creativecommons.org/licenses/by/3.0/ie/
+
+2. Estrutura do pacote
+-------------------------------
+
+Este pacote contém três directorias, que compreendem os recursos indicados em 4., 5. e 6., respectivamente:
+coleccoes/ 
+programas/
+corridas/
+
+
+3. Organização do Segundo HAREM
+-------------------------------
+
+3.1 Organizadores
+O HAREM é organizado pela Linguateca (http://www.linguateca.pt). 
+A equipa do Segundo HAREM foi constituída por: Diana Santos, Cláudia Freitas, Hugo Gonçalo Oliveira, Paula Carvalho e Cristina Mota.
+
+3.2 Datas importantes do Segundo HAREM
+Primeira chamada para participação: Outubro de 2007
+Envio das corridas pelos participantes: Abril de 2008 
+Resultados oficiais: Setembro de 2008
+
+3.3 Documentação
+A documentação integral do Segundo HAREM, que inclui as directivas das várias pistas, pode ser consultada em:  
+Cristina Mota & Diana Santos (eds.). Desafios na avaliação conjunta do reconhecimento de entidades mencionadas: O Segundo HAREM. Linguateca, 2008. http://www.linguateca.pt/LivroSegundoHAREM/
+
+3.4 Como citar o Pacote de Recursos do Segundo HAREM
+Este pacote deve ser referido como "LÂMPADA 2.0 - Pacote de Recursos do Segundo HAREM" (http://www.linguateca.pt/HAREM/PacoteRecursosSegundoHAREM.zip)
+
+
+4. Colecção HAREM e colecções douradas
+--------------------------------------
+
+4.1 Colecção HAREM
+Esta colecção, colSegundoHAREM.xml, é constituída pelo conjunto de 1040 documentos que os sistemas tiveram de anotar no Segundo HAREM. 
+
+Em colSegundoHAREM-meta.xml, fornecemos os meta-dados relativos à fonte e ao tipo de cada texto, inequivocamente identificado pelo valor do DOC (identificador do documento).
+Apresentamos em seguida uma breve explicação sobre os diferentes valores usados nesse documento para a variante, para o tipo de texto, e para a fonte:
+
+VARIANTE: PT (Portugal) ou BR (Brasil)
+
+TIPO_TEXTO: classificação que procura dar uma indicação geral sobre o género do texto. No Segundo HAREM, identificámos:
+	- Notícia: factos ou acontecimentos recentes. Associada à maior parte das notícias de jornal encontra-se, além disso, a indicação da secção do jornal de que foram retiradas, no atributo SECJORNAL de FONTE. 
+	- Didáctico: textos educativos, tais como artigos de enciclopédia, material académico, cartilhas, etc.
+	- Opinião: artigos de opinião ou ensaios. 
+	- Blogue: textos que também expressam opiniões, mas normalmente num estilo menos formal. Os blogues foram subcategorizados em "blogue pessoal", no caso de o texto ter sido escrito num registo pessoal, "blogue jornalístico", no caso de o texto ter um registo próximo do de um artigo de jornal, e "blogue humorístico". 
+	- Perguntas: textos não articulados em termos de conteúdo; trata-se de perguntas (artificiais), especificamente usadas na tarefa de avaliação de sistemas de resposta automática a perguntas (QA@CLEF). 
+	- Perguntas faq (FAQ): perguntas e respostas encontradas em páginas de perguntas já respondidas (Frequently Asked Questions).
+	- Entrevista: diálogos
+	- Legislativo: textos legais
+	- Literário: textos retirados de obras literárias
+	- Promocional: textos publicitários ou de promoção
+	- Texto privado manuscrito
+
+FONTE: informação sobre a origem/fonte do texto.
+	NOME classifica o canal de publicação: nome do jornal, título do livro, título do sítio, colecções anteriores, etc. 
+	AUTOR designa o nome do autor, quando este é conhecido
+	DATA-CRIACAO indica a data de publicação
+	DATA-OBTENCAO indica a data de quando o texto foi acedido
+	REFERENCIA inclui o URL
+	TITULO designa o nome do excerto particular do texto
+	SECJORNAL contém a secção do jornal à qual as notícias pertencem: Cien_Tecn_Educ, COTIDIANO, Cultura, Desporto, Diversos, Economia, ESPORTE, FOLHATEEN, FOLHINHA, ILUSTRADA, Local, Mundo, Nacional/Brasil, Nacional/Portugal, OPINIÃO, REVISTA_DA_FOLHA, Sociedade, TURISMO, TV_FOLHA
+
+
+4.2 Colecções douradas (CD)
+Última revisão: 19 de Abril de 2010.
+
+CD do Segundo HAREM (CDSegundoHAREM.xml): 129 documentos extraídos da colecção HAREM, cujas entidades mencionadas foram manualmente anotadas de acordo com as directivas do HAREM clássico e cujas relações semânticas entre as entidades também foram manualmente anotadas de acordo com as directivas do ReRelEM. Diferentemente da CD do ReRelEM, incluída no primeiro pacote LAMPADA, as relações desta CD foram anotadas por apenas uma anotadora. Devido ao maior volume de documentos anotados, houve pequenas alterações nos tipos de relações, documentadas em 
+http://www.linguateca.pt/aval_conjunta/HAREM/ListaMudancasDirectivasReRelEM.html.
+
+CD do TEMPO (CDSegundoHAREM_TEMPO.xml): subconjunto da CD do Segundo HAREM de 30 documentos em que as EM também foram manualmente anotadas de acordo com as directivas do TEMPO, com vista a uma análise mais fina das EM temporais e sua normalização. Esta CD não contém relações entre EM. 
+
+As duas colecções podem ainda conter comentários, assinalados pelo atributo COMENT, que disponibilizamos para estudos futuros. Segue-se uma breve descrição dos valores possíveis que este atributo pode tomar:
+
+a) 2/3: a classificação da EM (categoria, tipo ou subtipo) não foi feita por consenso, mas por maioria.
+b) DUVIDA_DIRECTIVASTEMPO: casos de TEMPO em que as anotadoras tiveram dúvidas, geralmente associadas a diferentes interpretações possíveis das directivas do TEMPO (cujos proponentes estavam impossibilitados de esclarecer, dado que também eram participantes do Segundo HAREM).
+c) INDEP: diz respeito à pista do ReRelEM, e indica que a relação reconhecida pelas anotadoras não pode ser inferida através da informação fornecida pelo texto.
+d) futuro: diz respeito à pista do ReRelEM, e indica que a relação reconhecida pelas anotadoras apenas acontecerá no futuro (dado que essa relação, de acordo com a informação do texto, ainda não aconteceu).
+
+
+5. Programas de avaliação
+-------------------------
+Versão: 21 de Abril de 2010.
+
+5.1 Requisitos
+- Máquina virtual Java 1.6 ou superior
+- gawk (para a avaliação dos atributos estendidos de TEMPO)
+- R versão 2.7.1 ou superior (para a geração dos relatórios individuais)
+
+5.2 Instalação e utilização
+- Extrair o conteúdo deste pacote para onde for pretendido
+- Fazer a invocação dos programas a partir da directoria Av_HAREM_XML
+
+5.3 Manual de utilização
+- O manual, em HTML, encontra-se na directoria Av_HAREM_XML/docs
+- Exemplos de utilização adicionais e notas para compilação do código encontram-se em programas/Leiame_programas.txt
+
+5.4 Licenças
+Todos os programas desenvolvidos no HAREM são distribuídos com base na licença BSD (ver programas/LICENSE.txt).
+Além disso, distribuímos os seguintes programas externos, na directoria programas/externos, e que têm as suas próprias licenças:
+- Jdom (http://www.jdom.org), cuja licença Apache-style open source está incluída no ficheiro LICENSE.txt do pacote jdom-1.1.zip 
+- JGraph (http://www.jdom.org), cuja licença LGPL está incluída no ficheiro LICENSE do pacote jgraph-latest-lgpl-src.jar
+
+
+5.5 Serviço SAHARA
+De notar que o conjunto de programas de avaliação usados no Segundo HAREM também pode ser utilizado através do serviço SAHARA (Serviço de Avaliação HAREM Automático), disponível em http://www.linguateca.pt/HAREM/ (escolher "Avaliador").
+
+
+6. Corridas dos sistemas participantes
+--------------------------------------
+
+10 sistemas participaram no Segundo HAREM e cada sistema pôde enviar, no máximo, 4 corridas. As corridas que disponibilizamos neste pacote (na directoria corridas/) são, para cada sistema: 
+
+Cage2:
+partic01_1_corr.xml
+partic01_2_corr.xml
+partic01_3_corr.xml
+partic01_4_corr.xml
+
+DobrEM:
+partic03_1_corr.xml
+
+PorTexTO:
+partic06_1_corr.xml
+partic06_2_corr.xml
+partic06_3_corr.xml
+partic06_4_corr.xml
+
+Priberam:
+partic07_1.xml
+
+R3M:
+partic09_1.xml
+partic09_2.xml
+
+REMBRANDT:
+partic10_1.xml
+partic10_2.xml
+partic10_3_corr.xml
+
+REMMA:
+partic11_1_corr.xml
+partic11_2_corr.xml
+partic11_3_corr.xml
+
+SEI-Geo:
+partic13_1.xml
+partic13_2.xml
+partic13_3.xml
+partic13_4.xml
+
+SeRELeP:
+partic15_1.xml
+
+XIP-L2F/XEROX:
+partic16_2.xml
+partic16_3.xml
+
+O nome dos ficheiros indica o número do participante (atribuído pela organização), o número da corrida e pode ainda ter o sufixo _corr, que indica que a participação sofreu pequenas alterações (como por exemplo a alteração da codificação de caracteres ou a reatribuição do atributo DOCID aos documentos).
+
+
+7. Diferenças em relação à versão 1.0 da LÂMPADA (Pacote de recursos do Segundo HAREM)
+-------------------------------------------------------------------------------------------------
+
+- O pacote passou a incluir uma directoria raiz chamada lampada2.0.
+
+- A CD do Segundo HAREM passou a incluir a anotação das relações semânticas entre entidades (ver  4.2).
+
+- Não inclusão da CD do ReRelEM, uma vez que todas as relações estão anotadas na CD do Segundo HAREM.
+
+- Inclusão da lista de relações da CD do Segundo HAREM em formato de triplos antes (triplos_CDSegundoHAREM.txt) e depois (triplos_expandidos_CDSegundoHAREM.txt) da expansão das relações.
+
+- Alteração no programa que invoca toda a sequência de avaliação, Avaliacao.sh, que passou a usar a CD do Segundo HAREM (em vez da CD do ReRelEM) para fazer a avaliação do ReRelEM.
+
+- Inclusão de um programa que remove de uma colecção dourada as informações da normalização do TEMPO e/ou do ReRelEM (cdharem_retirainfo.pl).
+
+- Correcção dos seguintes problemas na CD do Segundo HAREM:
+
+	a) As entidades H2-dftre765-90, H2-dftre765-92, H2-dftre765-94, H2-dftre765-95 foram reanotadas como entidades vagas, e receberam adicionalmente a classificação de  ORGANIZACAO INSTITUICAO.
+
+	b) A entidade hub-47914-2 foi reanotada como entidade vaga, e recebeu adicionalmente a classificação de  PESSOA GRUPOMEMBRO.
+
+	c) As entidades hub-15590-201, hub-15590-205, hub-15590-78, hub-15590-87, hub-15590-69, hub-15590-124, hub-55847-344 e hub-55847-345 foram reanotadas como entidades vagas, e receberam adicionalmente a classificação de  ORGANIZACAO ADMINISTRACAO.
+
+	d) As entidades ric-74122-15 e ric-74122-16 tiveram o seu tipo corrigido, e passaram a ser OBRA REPRODUZIDA.
+
+	e) As entidades ric-58766-56 e ric-58766-62 foram reanotadas como entidades vagas, e receberam adicionalmente a classificação de  ORGANIZACAO EMPRESA.
+
+	f) Nas entidades hub-66526-23, hub-66526-25 e hub-66526-545 foi especificada a faceta que participa na relações com a entidade hub-66526-22.
+	
+	g) A entidade hub-66526-21 (reis de Portugal) passou a incluir duas relações de inclusão com as entidades hub-66526-25 (D. Afonso Henriques) e hub-66526-545 (D. Sancho I).
+
+	h) O atributo TIPOREL da entidade hub-49343-32 foi corrigido de "local_nascimento" para "local_nascimento_de".
+
+- Correcção dos seguintes problemas na CD do TEMPO:
+
+	i) As seguintes entidades passaram a ter o atributo VAL_DELTA preenchido com "A0M0S0D0H0M0S0": H2-Ren_2003_6465-178, aa58069-184, aa58069-432, aa56088-483, bob-14949-583, bob-14949-640, hub-16268-5, hub-16268-20, hub-71248-192, hub-41899-399, hub-41899-360, aa33715-460, hub-71248-4, hub-71248-5, hub-21881-182, hub-60382-125 e hub-51467-321.
+
+
+- Correcção dos seguintes problemas na CD do Segundo HAREM e na CD do TEMPO:
+
+	j) As entidades hub-71248-195, hub-71248-206, hub-71248-213 e hub-21881-184 foram reclassificadas como PESSOA GRUPOMEMBRO, uma vez que estão a ser referidas a sua faceta entrevistadora. 
+
+	k) As entidades aa55968-499 e aa55968-500 foram reanotadas como entidades vagas, e receberam adicionalmente a classificação de  PESSOA GRUPOMEMBRO.
+
+	l) A entidade hub-49343-22 foi criada para uma das alternativas de segmentacao da entidade "rei D. Fernando de Nápolis", especificamente, para a alternativa "rei D. Fernando".
+
+	m) A faceta OUTRO da entidade vaga hub-94570-120 foi reanotada como ABSTRACCAO DISCIPLINA.
+	
+- No ficheiro colSegundoHAREM-meta.xml, o tipo de texto dos documentos ric-85133 e ric-46546 foi corrigido de "opiniao" para "opinião".
+
+
+8. Agradecimentos
+-----------------
+
+A Linguateca é financiada pelo governo português e pela União Europeia (FEDER e FSE), no âmbito do contrato POSC/339/1.3/C/NAC, e pela FCCN e pela UMIC.
+Agradecemos a Caroline Hagège, Nuno Mamede e Jorge Baptista pela introdução da pista do TEMPO, a Nuno Cardoso pelo desenvolvimento do SAHARA, assim como a David Cruz, Luís Miguel Cabral e Luís Costa pelo seu apoio em diferentes tarefas ao longo do Segundo HAREM. Queremos também agradecer a todos os participantes do Segundo HAREM por nos terem autorizado a distribuir as corridas incluídas no presente pacote.
+
+
+Data de actualização do presente ficheiro: 10 de setembro de 2015
